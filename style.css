@@ -1,0 +1,212 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+fieldset {
+    margin-bottom: 1vh;
+    padding: 1vh;
+    border: 2px solid #d8c7cf;
+}
+
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    background: #8490a9;
+}
+
+.container {
+    width: 30vw;
+    min-height: 90vh;
+    height: auto;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    background-color: #5c6985;
+    padding: 2vh;
+    border-radius: 10px;
+    color: white;
+}
+
+.container h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container .input-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.input-box .input {
+    text-align: center;
+    width: 100%;
+}
+
+.buttons {
+    text-align: center;
+}
+
+button[type="submit"],
+button[type="reset"] {
+    width: 30%;
+    padding: 5px;
+    margin: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"] {
+    background-color: #262b37;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+}
+
+button[type="submit"]:hover {
+    background-color: #6b6f99;
+}
+
+button[type="reset"] {
+    background-color: #922119;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+button[type="reset"]:hover {
+    background-color: #e9363c;
+}
+
+.input #aboutme {
+    width: 20vw;
+    height: 15vh;
+    padding: 1vh;
+    resize: none;
+    background: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    outline: none;
+    color: white;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #2d3547;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #181e2d;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover,
+::-webkit-scrollbar-thumb:active {
+    background-color: #ffffff;
+}
+
+.input input[type="text"],
+.input input[type="password"],
+.input input[type="email"],
+#gender {
+    width: 15vw;
+    height: 5vh;
+    margin: 1vh;
+    padding: 1vh;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    outline: none;
+    color: white;
+}
+
+.input input[type="text"]::placeholder,
+.input input[type="password"]::placeholder,
+.input input[type="email"]::placeholder {
+    color: white;
+}
+
+#gender {
+    width: 10vw;
+    height: 5vh;
+    margin: 1vh;
+    padding: 1vh;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    outline: none;
+    color: white;
+}
+
+#gender option {
+    background-color: #333e56;
+    border-radius: 10px;
+}
+
+/* Add media queries for different screen sizes */
+@media (max-width: 992px) {
+    .container {
+        width: 80vw;
+    }
+
+    .input input[type="text"],
+    .input input[type="password"],
+    .input input[type="email"],
+    #gender {
+        width: 60vw;
+    }
+
+    .input #aboutme {
+        width: 70vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90vw;
+    }
+
+    .input input[type="text"],
+    .input input[type="password"],
+    .input input[type="email"],
+    #gender {
+        width: 65vw;
+    }
+
+    .input #aboutme {
+        width: 80vw;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        width: 80vw;
+    }
+
+    .input input[type="text"],
+    .input input[type="password"],
+    .input input[type="email"],
+    #gender {
+        width: 50vw;
+    }
+
+    .input #aboutme {
+        width: 60vw;
+    }
+}
